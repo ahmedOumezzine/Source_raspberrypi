@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Service/" targetNamespace="http://Service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ajouterLog" type="tns:ajouterLog" />
+  <xs:element name="ajouterLogResponse" type="tns:ajouterLogResponse" />
+  <xs:element name="getListLog" type="tns:getListLog" />
+  <xs:element name="getListLogResponse" type="tns:getListLogResponse" />
+  <xs:element name="modifierLog" type="tns:modifierLog" />
+  <xs:element name="modifierLogResponse" type="tns:modifierLogResponse" />
+  <xs:element name="supprimerLog" type="tns:supprimerLog" />
+  <xs:element name="supprimerLogResponse" type="tns:supprimerLogResponse" />
+  <xs:complexType name="supprimerLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:log" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="log">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="date" type="xs:string" />
+      <xs:element name="id_log" type="xs:int" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="supprimerLogResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="ajouterLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:log" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ajouterLogResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="modifierLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:log" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modifierLogResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListLog">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListLogResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:log" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

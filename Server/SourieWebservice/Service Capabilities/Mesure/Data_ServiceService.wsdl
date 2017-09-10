@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Data_ServiceService" targetNamespace="http://Service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://192.168.56.1:8080/ws/data?xsd=1" namespace="http://Service/" />
+    </xsd:schema>
+  </types>
+  <message name="ajouterData">
+    <part name="parameters" element="tns:ajouterData" />
+  </message>
+  <message name="ajouterDataResponse">
+    <part name="parameters" element="tns:ajouterDataResponse" />
+  </message>
+  <message name="supprimerData">
+    <part name="parameters" element="tns:supprimerData" />
+  </message>
+  <message name="supprimerDataResponse">
+    <part name="parameters" element="tns:supprimerDataResponse" />
+  </message>
+  <message name="getListData">
+    <part name="parameters" element="tns:getListData" />
+  </message>
+  <message name="getListDataResponse">
+    <part name="parameters" element="tns:getListDataResponse" />
+  </message>
+  <message name="modifierData">
+    <part name="parameters" element="tns:modifierData" />
+  </message>
+  <message name="modifierDataResponse">
+    <part name="parameters" element="tns:modifierDataResponse" />
+  </message>
+  <message name="FindBydata">
+    <part name="parameters" element="tns:FindBydata" />
+  </message>
+  <message name="FindBydataResponse">
+    <part name="parameters" element="tns:FindBydataResponse" />
+  </message>
+  <portType name="Data_Service">
+    <operation name="ajouterData">
+      <input wsam:Action="http://Service/Data_Service/ajouterDataRequest" message="tns:ajouterData" />
+      <output wsam:Action="http://Service/Data_Service/ajouterDataResponse" message="tns:ajouterDataResponse" />
+    </operation>
+    <operation name="supprimerData">
+      <input wsam:Action="http://Service/Data_Service/supprimerDataRequest" message="tns:supprimerData" />
+      <output wsam:Action="http://Service/Data_Service/supprimerDataResponse" message="tns:supprimerDataResponse" />
+    </operation>
+    <operation name="getListData">
+      <input wsam:Action="http://Service/Data_Service/getListDataRequest" message="tns:getListData" />
+      <output wsam:Action="http://Service/Data_Service/getListDataResponse" message="tns:getListDataResponse" />
+    </operation>
+    <operation name="modifierData">
+      <input wsam:Action="http://Service/Data_Service/modifierDataRequest" message="tns:modifierData" />
+      <output wsam:Action="http://Service/Data_Service/modifierDataResponse" message="tns:modifierDataResponse" />
+    </operation>
+    <operation name="FindBydata">
+      <input wsam:Action="http://Service/Data_Service/FindBydataRequest" message="tns:FindBydata" />
+      <output wsam:Action="http://Service/Data_Service/FindBydataResponse" message="tns:FindBydataResponse" />
+    </operation>
+  </portType>
+  <binding name="Data_ServicePortBinding" type="tns:Data_Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="ajouterData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="supprimerData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modifierData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="FindBydata">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Data_ServiceService">
+    <port name="Data_ServicePort" binding="tns:Data_ServicePortBinding">
+      <soap:address location="http://192.168.56.1:8080/ws/data" />
+    </port>
+  </service>
+</definitions>

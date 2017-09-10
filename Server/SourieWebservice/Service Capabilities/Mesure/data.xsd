@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Service/" targetNamespace="http://Service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="FindBydata" type="tns:FindBydata" />
+  <xs:element name="FindBydataResponse" type="tns:FindBydataResponse" />
+  <xs:element name="ajouterData" type="tns:ajouterData" />
+  <xs:element name="ajouterDataResponse" type="tns:ajouterDataResponse" />
+  <xs:element name="getListData" type="tns:getListData" />
+  <xs:element name="getListDataResponse" type="tns:getListDataResponse" />
+  <xs:element name="modifierData" type="tns:modifierData" />
+  <xs:element name="modifierDataResponse" type="tns:modifierDataResponse" />
+  <xs:element name="supprimerData" type="tns:supprimerData" />
+  <xs:element name="supprimerDataResponse" type="tns:supprimerDataResponse" />
+  <xs:complexType name="getListData">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="data">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="date" type="xs:string" />
+      <xs:element name="id_data" type="xs:int" />
+      <xs:element name="id_typedata" type="xs:int" />
+      <xs:element name="value" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ajouterData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ajouterDataResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="modifierData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modifierDataResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="FindBydata">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FindBydataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="supprimerData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="supprimerDataResponse">
+    <xs:sequence />
+  </xs:complexType>
+</xs:schema>

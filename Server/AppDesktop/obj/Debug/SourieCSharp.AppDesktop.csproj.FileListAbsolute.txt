@@ -1,0 +1,12 @@
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\obj\Debug\SourieCSharp.AppDesktop.csprojResolveAssemblyReference.cache
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\obj\Debug\SourieCSharp.AppDesktop.Properties.Resources.resources
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\obj\Debug\SourieCSharp.AppDesktop.csproj.GenerateResource.Cache
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\bin\Debug\SourieCSharp.AppDesktop.exe.config
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\bin\Debug\SourieCSharp.AppDesktop.exe
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\bin\Debug\SourieCSharp.AppDesktop.pdb
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\bin\Debug\MySql.Data.dll
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\bin\Debug\MySql.Data.xml
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\obj\Debug\SourieCSharp.AppDesktop.exe
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\obj\Debug\SourieCSharp.AppDesktop.pdb
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\obj\Debug\SourieCSharp.AppDesktop.listSources.resources
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\AppDesktop\obj\Debug\SourieCSharp.AppDesktop.SourisDetails.resources

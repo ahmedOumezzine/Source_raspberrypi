@@ -1,0 +1,7 @@
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\Core\bin\Debug\Core.dll
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\Core\bin\Debug\Core.pdb
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\Core\bin\Debug\MySql.Data.dll
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\Core\bin\Debug\MySql.Data.xml
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\Core\obj\Debug\Core.dll
+C:\Users\bouhmid\Documents\Visual Studio 2017\Projects\SourieCSharp\Core\obj\Debug\Core.pdb

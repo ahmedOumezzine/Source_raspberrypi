@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Log_ServiceService" targetNamespace="http://Service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://192.168.56.1:8080/ws/log?xsd=1" namespace="http://Service/" />
+    </xsd:schema>
+  </types>
+  <message name="supprimerLog">
+    <part name="parameters" element="tns:supprimerLog" />
+  </message>
+  <message name="supprimerLogResponse">
+    <part name="parameters" element="tns:supprimerLogResponse" />
+  </message>
+  <message name="ajouterLog">
+    <part name="parameters" element="tns:ajouterLog" />
+  </message>
+  <message name="ajouterLogResponse">
+    <part name="parameters" element="tns:ajouterLogResponse" />
+  </message>
+  <message name="modifierLog">
+    <part name="parameters" element="tns:modifierLog" />
+  </message>
+  <message name="modifierLogResponse">
+    <part name="parameters" element="tns:modifierLogResponse" />
+  </message>
+  <message name="getListLog">
+    <part name="parameters" element="tns:getListLog" />
+  </message>
+  <message name="getListLogResponse">
+    <part name="parameters" element="tns:getListLogResponse" />
+  </message>
+  <portType name="Log_Service">
+    <operation name="supprimerLog">
+      <input wsam:Action="http://Service/Log_Service/supprimerLogRequest" message="tns:supprimerLog" />
+      <output wsam:Action="http://Service/Log_Service/supprimerLogResponse" message="tns:supprimerLogResponse" />
+    </operation>
+    <operation name="ajouterLog">
+      <input wsam:Action="http://Service/Log_Service/ajouterLogRequest" message="tns:ajouterLog" />
+      <output wsam:Action="http://Service/Log_Service/ajouterLogResponse" message="tns:ajouterLogResponse" />
+    </operation>
+    <operation name="modifierLog">
+      <input wsam:Action="http://Service/Log_Service/modifierLogRequest" message="tns:modifierLog" />
+      <output wsam:Action="http://Service/Log_Service/modifierLogResponse" message="tns:modifierLogResponse" />
+    </operation>
+    <operation name="getListLog">
+      <input wsam:Action="http://Service/Log_Service/getListLogRequest" message="tns:getListLog" />
+      <output wsam:Action="http://Service/Log_Service/getListLogResponse" message="tns:getListLogResponse" />
+    </operation>
+  </portType>
+  <binding name="Log_ServicePortBinding" type="tns:Log_Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="supprimerLog">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ajouterLog">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modifierLog">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListLog">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Log_ServiceService">
+    <port name="Log_ServicePort" binding="tns:Log_ServicePortBinding">
+      <soap:address location="http://192.168.56.1:8080/ws/log" />
+    </port>
+  </service>
+</definitions>
