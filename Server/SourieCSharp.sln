@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourieCSharp", "SourieWebse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourieCSharp.AppDesktop", "AppDesktop\SourieCSharp.AppDesktop.csproj", "{164A5A52-D108-4661-8931-B9E6833DED81}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenshots", "screenshots", "{C00CB93E-16B9-4DAB-8E3C-E6A4FB39A7EE}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Pictures\Capture.PNG = ..\..\..\..\Pictures\Capture.PNG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F1BEE93-88E9-4D1D-9F61-CCD8E16B6E7B}
 	EndGlobalSection
 EndGlobal
